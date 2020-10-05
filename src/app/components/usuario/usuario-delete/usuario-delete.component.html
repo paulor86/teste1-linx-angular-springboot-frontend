@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Deletar Usuário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Usuário" 
+                [(ngModel)]="usuario.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Logradouro" 
+                [(ngModel)]="usuario.logradouro" name="logradouro" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" 
+                [(ngModel)]="usuario.telefone" name="telefone" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email"
+                [(ngModel)]="usuario.email" name="email" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteUsuario()" color="warn">
+        Excluir Usuário
+    </button>    
+    <button mat-raised-button (click)="cancelUsuario()">
+        Cancelar Usuário
+    </button>    
+</mat-card>
